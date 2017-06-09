@@ -1,0 +1,62 @@
+// configuration file for demo_PennAction
+
+// General
+dataset_name 		= "Penn_Action";
+num_actions		= 14;
+save			= true;
+cache			= "../cache";
+experiment_name 	= "Penn_Action_Demo";
+num_threads		= 10;
+
+// Forest params
+forest_path 	= "../data/forests";
+num_trees	= 20;
+
+norm_size 	= 50;
+
+// Body Pose Type
+pose_type 		= 13;
+
+// PS model params
+ps_num_clusters		= 1;
+ps_num_rotations	= 24;
+ps_use_weights		= true;
+ps_weight_alpha		= 0.1;
+ps_zero_sum_weights	= true;
+ps_min_samples		= 15;	
+
+
+// Test file
+test_file = "../data/datasets/Penn_Action/index_test.txt";
+start_index = 0;
+end_index = 40;
+
+// patch size ratio
+patch_ratio		= 0.25;
+
+//Train file 
+train_file 		= "../data/datasets/Penn_Action/index_train_rescaled.txt";
+
+// Results dir
+results_dir 		= "../results/";
+output_dir		= "../output/";
+
+use_flipped_anns 	= false;
+
+cnn_params =
+{
+	caffe_path			= ""
+  	pretrained_net_proto 		= "../data/models/vgg-16/VGG_ILSVRC_16_layers.caffemodel";
+	feature_extraction_proto 	= "../data/models/vgg-16/VGG_ILSVRC_16_layers_deploy.prototxt_trunc_pennaction_test_512.txt";
+	mean_pixel 			= ([103.939, 116.779, 123.68]);
+	mean_file 			= ""
+	use_gpu 			= false;
+	device_id 			= 0;
+};
+
+
+// Appearance sharing weights
+app_sharing_weights = "../data/app_sharing_weights/";
+
+// Action probabilities
+action_probs_file = "../data/action_probs/";
