@@ -1,0 +1,24 @@
+____Path to images index file
+/home/ibal_109/work/Datasets/JHMDB/split_1/index_train_rescaled_50_action_cats.txt
+____Path to folders containing the trees
+/home/ibal_109/work/2014/Pose_Estimation_Code_action_conditioned_pose/cond_regressors/JHMDB/
+____Number of trees
+25
+____Number of testscd
+1000
+____Max depth
+20
+____Min samples per Node
+20
+____Samples per Tree
+5000
+____Patches Per Sample
+100
+____Face Size
+50
+____Patch Size Ratio
+0.6
+____Feature
+0 6 7
+____split mode
+3

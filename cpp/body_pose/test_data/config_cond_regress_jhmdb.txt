@@ -1,0 +1,24 @@
+____Path to images index file
+/home/ibal_109/work/Datasets/JHMDB/pc_annotations/index_train_ac_split3_rescaled_flipped.txt
+____Path to folders containing the trees
+/home/ibal_109/work/2015/Pose_Estimation_Code_v1.2/pcond_regressors/JHMDB/
+____Number of trees
+20
+____Number of testscd
+1000
+____Max depth
+20
+____Min samples per Node
+20
+____Samples per Tree
+5000
+____Patches Per Sample
+100
+____Face Size
+40
+____Patch Size Ratio
+0.6
+____Feature
+0 6 7
+____split mode
+0 3

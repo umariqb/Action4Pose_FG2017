@@ -1,0 +1,43 @@
+Import('builder')
+
+
+################################################################################
+builder.Library(name = 'multi_part_forest',
+                  srcs = [ 
+                       #'multi_part_sample.cpp',
+                 		   'body_part_sample.cpp',
+                 		   'body_sample.cpp',
+                 		   'utils.cpp'
+                  		   ],
+                  deps = [ 'ext:opencv',
+                           'ext:boost',
+                           '/cpp/learning/forest/random_forest',
+													 '/cpp/vision/features/feature_channels/feature_channel_factory',
+													 '/cpp/vision/features/simple_feature',
+													 '/cpp/vision/geometry_utils',
+													 '/cpp/vision/opencv_utils',		
+                           '/cpp/vision/image_utils',
+													 '/cpp/utils/image_file_utils',
+                           '/cpp/utils/net_utils',
+                           '/cpp/utils/system_utils',
+                           '/cpp/third_party/json_spirit/json_spirit',
+                           '/cpp/utils/serialization',
+                           
+                           ],
+                  flags = { 'LIBS' : [ 'opencv_features2d',
+                                       'opencv_objdetect',
+                                       'opencv_imgproc',
+                                       'opencv_highgui',
+                                       'opencv_flann',
+                                       'boost_filesystem',
+                                       'boost_regex',
+                                       'boost_thread',
+                                       
+                                      ],
+                          'CCFLAGS': ['']
+                           },                  
+                 )   
+                
+
+ 
+               

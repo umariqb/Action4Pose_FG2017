@@ -1,0 +1,55 @@
+package vision.segmentation;
+
+
+message SuperPixelSegmentatinParam {
+
+
+  optional SuperPixelParam super_pixel_param = 1;      
+  optional bool horizontal_boarders_is_background = 2 [default = true];
+  optional bool vertical_boarders_is_background = 3 [default = true];
+  optional GrabCutParam gabcut_param = 4;      
+
+
+  optional BodyPoseSegmentationParam body_pose_param = 5;      
+  optional SkinSegmentationParam skin_param = 6;      
+  optional FaceSegmentationParam face_param = 7;      
+  
+
+}
+
+message BodyPoseSegmentationParam {
+
+  optional double min_body_pose_score = 1 [default = -0.9];
+  optional bool upperbody_is_forground = 2 [default = true];
+  optional bool lowerbody_is_forground = 3 [default = true];
+  
+
+}
+
+message SkinSegmentationParam {
+
+  optional double skin_threshold = 1 [default = 0.25];
+
+}
+
+message FaceSegmentationParam {  
+
+  optional int32 min_feature_size = 1 [default = 20];
+  optional int32 min_neighbors = 2 [default = 3];
+  optional double search_scale_factor = 3 [default = 1.3];
+  optional string path_face_cascade = 4 [default = "/scratch_net/giggo/mdantone/grid/ffd_awesomeness/ffd_data/haarcascade_frontalface_alt.xml"];
+  optional double rescale_factor_boxes = 5 [default = 0.5];
+  
+}
+
+
+message SuperPixelParam {    
+  optional double sigma = 1[default = 0.1];
+  optional double c = 2 [default = 200];
+  optional double min_size = 3 [default = 0.1];
+}
+
+message GrabCutParam {    
+  optional int32 grabcut_rounds = 1 [default = 5];
+  optional int32 post_processing_kernel_size = 2 [default = 5];
+}

@@ -1,0 +1,9 @@
+g++ armaknn.cpp main.cpp -o boc $(pkg-config --cflags  /home/awesome/lib/opencv-2.4/lib/pkgconfig/opencv.pc) $(pkg-config --libs  /home/awesome/lib/opencv-2.4/lib/pkgconfig/opencv.pc) -I/home/awesome/lib/boost-1.43.0/include/ -L/home/awesome/lib/boost-1.43.0/lib -lboost_program_options -I/home/cwengert/installed/armadillo-3.2.0/include/ -I/home/cwengert/installed/ATLAS-3.10.0/include/ -L/home/cwengert/installed/ATLAS-3.10.0/libs -llapack -lf77blas -lcblas -latlas -O3
+
+
+
+export LD_LIBRARY_PATH=/home/awesome/lib/opencv-2.4/lib/:/home/awesome/lib/boost-1.43.0/lib:/home/cwengert/installed/ATLAS-3.10.0/lib/
+
+
+./boc --image=/srv/glusterfs/cwengert/flickr60K/1.jpg --centroids=C256_lab.boc
+

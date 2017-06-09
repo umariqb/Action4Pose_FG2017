@@ -1,0 +1,24 @@
+____Path to images index file
+/home/mdantone/scratch/data/leed_sport/index_train_both.txt
+____Path to folders containing the trees
+/
+____Number of trees
+5
+____Number of testscd
+2500
+____Max depth
+15
+____Min samples per Node
+25
+____Samples per Tree
+500
+____Patches Per Sample
+50
+____Face Size
+50
+____Patch Size Ratio
+0.5
+____Feature
+10
+____split mode
+0

@@ -1,0 +1,24 @@
+____Path to images index file
+/home/ibal_109/work/Datasets/Penn_Action/pc_annotations/index_train_2_rescaled.txt
+____Path to folders containing the trees
+/home/ibal_109/work/2015/Pose_Estimation_Code_v1.2/pcond_regressors/Penn_Action/
+____Number of trees
+15
+____Number of testscd
+1000
+____Max depth
+20
+____Min samples per Node
+20
+____Samples per Tree
+10000
+____Patches Per Sample
+50
+____Face Size
+60
+____Patch Size Ratio
+0.6
+____Feature
+0 6 7
+____split mode
+0 3

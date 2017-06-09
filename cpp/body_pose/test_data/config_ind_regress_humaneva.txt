@@ -1,0 +1,24 @@
+____Path to images index file
+/home/ibal_109/work/Datasets/HumanEva1/Train/image_index_train_jog_rescaled.txt
+____Path to folders containing the trees
+/home/ibal_109/work/2014/Pose_Estimation_Code_v1.1/regressors/HumanEva
+____Number of trees
+15
+____Number of testscd
+1000
+____Max depth
+20
+____Min samples per Node
+20
+____Samples per Tree
+700
+____Patches Per Sample
+100
+____Face Size
+75
+____Patch Size Ratio
+0.6
+____Feature
+0 6 7
+____split mode
+3
