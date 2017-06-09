@@ -13,7 +13,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 ####################### CUSTOM_LIBRARY_PATH ####################### 
 #########  Adjust this path if local libraries are used  ##########
 ###################################################################
-set(CUSTOM_LIBRARY_PATH "/media/data/doering/Libraries/")
+set(CUSTOM_LIBRARY_PATH "")
 
 ################# Caffe Path ######################################
 ####### Adjust this path according to your caffe location #########
