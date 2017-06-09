@@ -1,7 +1,7 @@
 # download forests trained on PennAction dataset
 mkdir forests && cd forests
 wget http://pages.iai.uni-bonn.de/iqbal_umar/action4pose/data/Penn_Action.tar
-tar -zxvf Penn_Action.tar
+tar -xvf Penn_Action.tar
 rm Penn_Action.tar
 cd ..
 
