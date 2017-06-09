@@ -1,0 +1,6 @@
+[submodule "data/caffe"]
+	path = data/caffe
+	url = https://github.com/BVLC/caffe.git
+[submodule "caffe"]
+	path = caffe
+	url = https://github.com/BVLC/caffe.git
